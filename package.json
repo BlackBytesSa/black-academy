@@ -1,0 +1,44 @@
+{
+  "name": "black-academy",
+  "version": "0.0.1",
+  "description": "Basic project",
+  "private": true,
+  "scripts": {
+    "tsc": "tsc",
+    "install:all": "npm install --legacy-peer-deps --workspaces --if-present",
+    "ci:all": "npm ci --workspaces --if-present",
+    "build": "npm run build --workspaces --if-present",
+    "deploy-hosting": "npm run build --workspaces --if-present && firebase deploy --only hosting",
+    "deploy": "npm run deploy --workspaces --if-present",
+    "clean": "npm run clean --workspaces --if-present",
+    "dev": "npm run dev --workspaces --if-present"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "workspaces": [
+    "functions",
+    "hello-world"
+  ],
+  "devDependencies": {
+    "@types/node": "^20.2.5",
+    "@typescript-eslint/eslint-plugin": "^6.2.1",
+    "@typescript-eslint/parser": "^6.2.1",
+    "eslint": "^8.16.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^16.0.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-react": "^7.30.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "prettier": "^3.0.1",
+    "prettier-eslint": "^15.0.1",
+    "typescript": "^5.1.3"
+  },
+  "dependencies": {
+    "esbuild": "^0.19.2"
+  }
+}
