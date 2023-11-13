@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "black-academy"
+  },
+  "targets": {
+    "black-academy": {
+      "hosting": {
+        "development": [
+          "black-academy"
+        ]
+      }
+    }
+  }
+}
