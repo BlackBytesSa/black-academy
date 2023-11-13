@@ -5,7 +5,7 @@ import './App.css'
 
 function App() {
   const [count, setCount] = React.useState(0)
-  console.log(import.meta.env.VITE_MODE)
+  console.log(import.meta.env)
 
   return (
     <>
